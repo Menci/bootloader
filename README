@@ -1,0 +1,14 @@
+文件列表：
+-------
+
+bootloader.s：引导器源代码（本次作业主要内容）
+C.ld：用于链接 os 目录下 C 程序的 ld script
+os/*.c：被加载的程序（保护模式）
+gdb/*.xml：用于 gdb 调试的文件（https://stackoverflow.com/a/61981253）
+
+Makefile 说明：
+-------------
+
+make 编译并使用 qemu-system-i386 运行编译好的 build/disk.img
+make clean 删除所有生成的文件
+修改 CODE_STARTING_SECTOR 可以测试将需要加载的程序放置到不同的扇区号中（记得 make clean）
